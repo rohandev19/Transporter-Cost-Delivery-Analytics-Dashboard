@@ -244,11 +244,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-**Your Name**
+**Muhammad Rohan**
 
 - GitHub: [@rohandev19](https://github.com/rohandev19)
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn]
+- LinkedIn: [Muhammad Rohan](https://www.linkedin.com/in/muhammad-rohan-445623287/)
 
 ## Acknowledgments
 
