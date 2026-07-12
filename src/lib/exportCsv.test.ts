@@ -10,8 +10,8 @@ describe('exportCsv', () => {
     createObjectURLMock = vi.fn(() => 'blob:mock-url');
     revokeObjectURLMock = vi.fn();
     clickMock = vi.fn();
-    global.URL.createObjectURL = createObjectURLMock;
-    global.URL.revokeObjectURL = revokeObjectURLMock;
+    window.URL.createObjectURL = createObjectURLMock;
+    window.URL.revokeObjectURL = revokeObjectURLMock;
   });
 
   afterAll(() => {
