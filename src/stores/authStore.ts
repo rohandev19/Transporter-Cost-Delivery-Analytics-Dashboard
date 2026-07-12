@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { User, UserRole } from '../types/auth';
 import { ROLE_PERMISSIONS } from '../constants/roles';
-import { nanoid } from 'nanoid';
+
 
 interface AuthState {
   isAuthenticated: boolean;
@@ -20,7 +20,7 @@ export const useAuthStore = create<AuthState>()(
 
       login: (role, name, email) => {
         const user: User = {
-          id: nanoid(),
+          id: crypto.randomUUID(),
           name,
           email,
           role,

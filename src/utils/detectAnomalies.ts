@@ -1,6 +1,6 @@
 import { TransporterRecord, AnomalyItem, TransporterRecordStatus } from '../types/transporter';
 import { ANOMALY_RULES } from '../constants/anomalyRules';
-import { nanoid } from 'nanoid';
+
 
 /**
  * Detect anomalies in a single record based on predefined rules
@@ -11,7 +11,7 @@ export function detectAnomalies(record: TransporterRecord): AnomalyItem[] {
   for (const rule of ANOMALY_RULES) {
     if (rule.check(record)) {
       anomalies.push({
-        id: nanoid(),
+        id: crypto.randomUUID(),
         recordId: record.id,
         code: rule.code,
         category: rule.category,
@@ -83,7 +83,7 @@ export function processRecordsWithAnomalies(
   duplicates.forEach((dupRecords) => {
     dupRecords.forEach(record => {
       const anomaly: AnomalyItem = {
-        id: nanoid(),
+        id: crypto.randomUUID(),
         recordId: record.id,
         code: 'A-007',
         category: 'duplicate',

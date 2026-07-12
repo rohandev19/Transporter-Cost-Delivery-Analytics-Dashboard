@@ -1,4 +1,4 @@
-import { TransporterRecord, DriverSummary, VehicleSummary, AnomalyItem } from './transporter';
+import { DriverSummary, VehicleSummary, AnomalyItem } from './transporter';
 
 // Report types
 export interface ReportSummary {

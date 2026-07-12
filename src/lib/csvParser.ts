@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid';
+
 import { TransporterRecord } from '../types/transporter';
 import { transporterRecordSchema } from '../schemas/transporterRecordSchema';
 import { calculateTotalCost, calculateCostPerPoint, calculateCostPerKm } from '../utils/calculateMetrics';
@@ -87,7 +87,7 @@ export async function parseCSV(csvText: string): Promise<ParseResult> {
       const validation = transporterRecordSchema.safeParse(parsedData);
       
       if (!validation.success) {
-        const errorMessages = validation.error.errors.map(e => e.message).join(', ');
+        const errorMessages = validation.error.issues.map(e => e.message).join(', ');
         errors.push(`Row ${i}: ${errorMessages}`);
         continue;
       }
@@ -102,7 +102,7 @@ export async function parseCSV(csvText: string): Promise<ParseResult> {
       );
 
       const record: TransporterRecord = {
-        id: nanoid(),
+        id: crypto.randomUUID(),
         ...parsedData,
         totalCost,
         costPerPoint: calculateCostPerPoint(totalCost, parsedData.deliveryPoints),

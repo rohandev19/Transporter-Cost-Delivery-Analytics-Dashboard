@@ -1,5 +1,5 @@
 import { TransporterRecord } from '../types/transporter';
-import { nanoid } from 'nanoid';
+
 import { calculateTotalCost, calculateCostPerPoint, calculateCostPerKm } from '../utils/calculateMetrics';
 
 // Mock data generators
@@ -50,10 +50,6 @@ function randomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function randomFloat(min: number, max: number): number {
-  return Math.random() * (max - min) + min;
-}
-
 function randomChoice<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -94,7 +90,7 @@ function generateRecord(daysAgo: number, intentionalAnomaly: boolean = false): T
   const costPerKm = calculateCostPerKm(totalCost, kilometer);
 
   return {
-    id: nanoid(),
+    id: crypto.randomUUID(),
     date: generateDate(daysAgo),
     driverName: randomChoice(DRIVERS),
     plateNumber: randomChoice(PLATES),
@@ -138,7 +134,7 @@ export function generateMockData(count: number = 400): TransporterRecord[] {
     const duplicateSource = records[randomInt(0, records.length - 1)];
     const duplicate = {
       ...duplicateSource,
-      id: nanoid(),
+      id: crypto.randomUUID(),
       createdAt: new Date().toISOString(),
     };
     records.push(duplicate);
