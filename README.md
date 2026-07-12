@@ -1,4 +1,4 @@
-# 🚚 Transporter Cost & Delivery Analytics Dashboard
+# Transporter Cost & Delivery Analytics Dashboard
 
 > A modern, production-ready React dashboard for monitoring transporter operations, delivery costs, and performance analytics.
 
@@ -9,22 +9,22 @@
 [![CI](https://github.com/rohandev19/Transporter-Cost-Delivery-Analytics-Dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/rohandev19/Transporter-Cost-Delivery-Analytics-Dashboard/actions)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 Overview
+## Overview
 
 This dashboard application helps logistics and transportation companies monitor their operational costs, track driver and vehicle performance, and detect data anomalies in real-time. Built as a modern frontend portfolio project showcasing professional React development practices.
 
-### 🎯 Key Features
+### Key Features
 
-- **📊 Real-time Dashboard** - Monitor key metrics: deliveries, costs, distances, and anomalies
-- **📤 CSV Upload** - Import operational data with validation and error reporting
-- **🔍 Anomaly Detection** - Automatically flag suspicious costs and data quality issues
-- **👨‍✈️ Driver Analytics** - Track individual driver performance and efficiency
-- **🚗 Vehicle Analytics** - Monitor vehicle costs and fuel efficiency
-- **📈 Data Visualization** - Interactive charts and KPI cards
-- **🔐 Role-Based Access** - Admin, Supervisor, and Viewer roles with different permissions
-- **💾 Persistent Storage** - Local state management with Zustand
+- **Real-time Dashboard** - Monitor key metrics: deliveries, costs, distances, and anomalies
+- **CSV Upload** - Import operational data with validation and error reporting
+- **Anomaly Detection** - Automatically flag suspicious costs and data quality issues
+- **Driver Analytics** - Track individual driver performance and efficiency
+- **Vehicle Analytics** - Monitor vehicle costs and fuel efficiency
+- **Data Visualization** - Interactive charts and KPI cards
+- **Role-Based Access** - Admin, Supervisor, and Viewer roles with different permissions
+- **Persistent Storage** - Local state management with Zustand
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Core
 
@@ -55,7 +55,7 @@ This dashboard application helps logistics and transportation companies monitor 
 - **Vitest** - Fast unit test framework
 - **React Testing Library** - Component testing
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -89,7 +89,7 @@ src/
 └── tests/               # Test files
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -119,7 +119,7 @@ npm run build
 npm run preview
 ```
 
-## 🎭 Demo Login
+## Demo Login
 
 The application uses **frontend-only authentication** for demonstration purposes.
 
@@ -131,7 +131,7 @@ The application uses **frontend-only authentication** for demonstration purposes
 
 **Note:** This is a demo authentication system. For production use, implement proper backend authentication.
 
-## 📊 Features in Detail
+## Features in Detail
 
 ### Dashboard Overview
 
@@ -178,7 +178,7 @@ costPerPoint = totalCost / deliveryPoints
 costPerKm = totalCost / kilometer
 ```
 
-## 🔒 Security Notes
+## Security Notes
 
 - This is a **frontend-only portfolio project** using **dummy data**
 - Authentication is simulated for UI demonstration only
@@ -195,7 +195,7 @@ costPerKm = totalCost / kilometer
 - Add rate limiting and input sanitization
 - Use HTTPS and secure session management
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run unit tests
@@ -205,7 +205,7 @@ npm run test
 npm run test:coverage
 ```
 
-## 🎨 Design Principles
+## Design Principles
 
 - **Professional First**: Clean, functional UI without excessive decoration
 - **Data Clarity**: Easy-to-read metrics and clear status indicators
@@ -213,7 +213,7 @@ npm run test:coverage
 - **Consistent Spacing**: Proper use of Tailwind's spacing system
 - **Status Visibility**: Color-coded badges for valid/warning/anomaly states
 
-## 📝 Future Improvements
+## Future Improvements
 
 - [ ] Advanced filtering and search in operations table
 - [ ] Export to PDF and Excel
@@ -228,7 +228,7 @@ npm run test:coverage
 - [ ] Mobile responsive optimization
 - [ ] Multi-language support (i18n)
 
-## 🤝 Contributing
+## Contributing
 
 This is a portfolio project, but suggestions and feedback are welcome!
 
@@ -238,11 +238,11 @@ This is a portfolio project, but suggestions and feedback are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 
 **Your Name**
 
@@ -250,7 +250,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Portfolio: [Your Portfolio URL]
 - LinkedIn: [Your LinkedIn]
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Vite](https://vitejs.dev/)
 - Icons by [Lucide](https://lucide.dev/)
@@ -259,6 +259,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⚠️ Disclaimer:** This project uses dummy data for demonstration purposes. It is not intended for production use without proper backend implementation and security measures.
+**Disclaimer:** This project uses dummy data for demonstration purposes. It is not intended for production use without proper backend implementation and security measures.
 
-Made with ❤️ as a portfolio project to demonstrate modern React development practices.
+Made as a portfolio project to demonstrate modern React development practices.
