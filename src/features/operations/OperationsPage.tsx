@@ -509,7 +509,7 @@ export default function OperationsPage() {
               </div>
 
               {/* Info Grid */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <DetailItem label="Date" value={formatDate(selectedRecord.date)} />
                 <DetailItem label="Driver" value={selectedRecord.driverName} />
                 <DetailItem label="Plate Number" value={selectedRecord.plateNumber} />
@@ -539,7 +539,7 @@ export default function OperationsPage() {
               </div>
 
               {/* Metrics */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-gray-50 rounded-lg p-3">
                   <p className="text-xs text-gray-500 mb-1">Cost per Point</p>
                   <p className="font-semibold text-gray-900">

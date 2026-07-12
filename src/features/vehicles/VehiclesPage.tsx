@@ -114,7 +114,7 @@ export default function VehiclesPage() {
       </div>
 
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div className="card p-5">
           <div className="flex items-center gap-2 mb-1">
             <Truck className="w-4 h-4 text-primary-600" />
@@ -352,7 +352,7 @@ export default function VehiclesPage() {
               )}
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <MetricBox label="Usage Days" value={formatNumber(selectedVehicle.totalUsageDays)} />
               <MetricBox label="Total KM" value={`${formatNumber(selectedVehicle.totalKilometer)} km`} />
               <MetricBox label="Gasoline Cost" value={formatCurrency(selectedVehicle.totalGasolineCost)} />

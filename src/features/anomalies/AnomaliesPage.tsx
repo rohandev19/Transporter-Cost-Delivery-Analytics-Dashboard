@@ -116,7 +116,7 @@ export default function AnomaliesPage() {
       </div>
 
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div className="card p-5">
           <p className="text-sm text-gray-600 mb-1">Total Anomalies</p>
           <p className="text-3xl font-bold text-gray-900">{anomalies.length}</p>
