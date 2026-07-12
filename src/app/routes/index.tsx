@@ -13,6 +13,7 @@ const DriversPage = lazy(() => import('../../features/drivers/DriversPage'));
 const VehiclesPage = lazy(() => import('../../features/vehicles/VehiclesPage'));
 const AnomaliesPage = lazy(() => import('../../features/anomalies/AnomaliesPage'));
 const ReportsPage = lazy(() => import('../../features/reports/ReportsPage'));
+const SettingsPage = lazy(() => import('../../features/settings/SettingsPage'));
 const ForbiddenPage = lazy(() => import('../../features/auth/ForbiddenPage'));
 
 // Loading component
@@ -130,6 +131,16 @@ export const router = createBrowserRouter([
           <Suspense fallback={<PageLoader />}>
             <ReportsPage />
           </Suspense>
+        ),
+      },
+      {
+        path: 'settings',
+        element: (
+          <RoleRoute requiredPermission="canEdit">
+            <Suspense fallback={<PageLoader />}>
+              <SettingsPage />
+            </Suspense>
+          </RoleRoute>
         ),
       },
       {

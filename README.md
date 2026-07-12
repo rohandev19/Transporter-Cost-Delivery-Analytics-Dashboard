@@ -5,6 +5,8 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38bdf8)](https://tailwindcss.com/)
+[![Vitest](https://img.shields.io/badge/Tested_with-Vitest-success)](https://vitest.dev/)
+[![CI](https://github.com/rohandev19/Transporter-Cost-Delivery-Analytics-Dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/rohandev19/Transporter-Cost-Delivery-Analytics-Dashboard/actions)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 📋 Overview
@@ -41,14 +43,14 @@ This dashboard application helps logistics and transportation companies monitor 
 - **Zustand** - Lightweight state management
 - **Zod** - Schema validation
 - **TanStack Table** - Advanced data tables (planned)
-- **Recharts** - Chart components (planned)
+- **Recharts** - Interactive chart components
 
 ### Form & Validation
 
 - **React Hook Form** - Form state management
 - **Zod** - Runtime type validation
 
-### Testing (planned)
+### Testing
 
 - **Vitest** - Fast unit test framework
 - **React Testing Library** - Component testing
